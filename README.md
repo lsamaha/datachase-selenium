@@ -51,6 +51,7 @@ adv: TI("big waiver")
 
 ### File Output
 The cases are parsed and their summaries are written to a new CSV (--outfile)
+
 ![alt tag](./img/daumier-litigant.jpg)
 
 ### Troubleshooting
@@ -62,6 +63,7 @@ you need. Firefox writes a log which can b useful as well.
 ### OS Notes
 These instructions assume a linux-based OS. 
 Windows users now have Linux [too](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+
 ![alt tag](./img/daumier-judgment..jpg)
 
  
