@@ -26,18 +26,6 @@ def main(home_url, user, password, query, infile, outfile, perjudge):
     write(get_case_summaries(home_url, user, password, query, infile), outfile, perjudge)
 
 
-def get_options(params):
-    if len(params) < 5:
-        raise (Exception("Invalid number of params"))
-    opts = {'user': params[1], 'password': params[2], 'outfile': params[4]}
-    if params[3].endswith('.csv'):
-        opts['infile'] = params[3]
-    else:
-        opts['query'] = params[3]
-    opts['per_judge'] = True if len(params) > 5 and params[5].lower() == 'true' else False
-    return opts
-
-
 def get_case_summaries(home_url, user, password, query, infile, page_size=100):
     case_summary_ids = set()
     case_summaries = []
