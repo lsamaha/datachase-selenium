@@ -22,8 +22,8 @@ but not currently configurable. Download Firefox, ensure it runs, then download 
 and add it to your system PATH.
 ```bash
 mkdir -p ~/src/driver/gecko && cd ~/src/driver/gecko
-wget https://github.com/mozilla/geckodriver/releases/https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-macos.tar.gz
-tar -xvf geckodriver-v0.19.1-macos.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-macos.tar.gz 
+tar -xvf geckodriver-v0.20.1-macos.tar.gz
 export PATH=$PATH:~/src/driver/getcko
 which geckodriver
 ```
