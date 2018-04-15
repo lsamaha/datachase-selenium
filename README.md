@@ -24,7 +24,7 @@ and add it to your system PATH.
 mkdir -p ~/src/driver/gecko && cd ~/src/driver/gecko
 wget https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-macos.tar.gz 
 tar -xvf geckodriver-v0.20.1-macos.tar.gz
-export PATH=$PATH:~/src/driver/getcko
+export PATH=$PATH:~/src/driver/gecko
 which geckodriver
 ```
 ### Usage
