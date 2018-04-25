@@ -56,7 +56,7 @@ The cases are parsed and their summaries are written to a new CSV (--outfile)
 ![alt tag](./img/daumier-litigant.jpg)
 
 ### briefchase.py
-This modified script pull some data from case docket pages and downloads the HTML versions of party briefs. Run it like so:
+This modified script pulls some data from case docket pages and downloads the HTML versions of party briefs. Run it like so:
 ```bash
 python3 briefchase.py --user myuser --infile my_cases.csv --informat single OR fjc
 ```
@@ -72,13 +72,13 @@ The script takes two formats. The __single__ format:
 ```
 
 Or, a more specialized, __FJC__ format, derived from a slimmed down version of the [Federal Judicial Center's courts of appeals data](https://www.fjc.gov/research/idb/interactive/IDB-appeals-since-2008):
-```bash
+
 | Circuit | Docket   | Appellant Name | Appellee Name | Date of Decision |
 |---------|----------|----------------|---------------|------------------|
 | 9       | 03-99002 | Ryan           | McMurtrey     | 08/21/2008       |
 | 9       | 03-99003 | Woodford       | Pinholster    | 05/02/2008       |
 | 9       | 03-99009 | McMurtrey      | Ryan          | 08/21/2008       |
-```
+
 
 The dockets are parsed and their summaries are written to a CSV while the party briefs are downloaded as HTML files to directories named after either the docket or the case citation. All of this is saved in the output directory.
 
